@@ -16,7 +16,7 @@ public class UserProductServiceApplication {
 	public FilterRegistrationBean jwtFilter(){
 		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean<>();
 		filterRegistrationBean.setFilter(new JwtFilter());
-		filterRegistrationBean.addUrlPatterns("/userdata/api/product/*");
+		filterRegistrationBean.addUrlPatterns("/userproduct/api/product/*");
 		return filterRegistrationBean;
 	}
 }
